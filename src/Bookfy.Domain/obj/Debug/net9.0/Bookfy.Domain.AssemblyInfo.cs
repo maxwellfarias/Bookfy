@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Bookfy.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e85e57e915d7d9f021fc962b37d1bffeb3828283")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f67822f569af9b5ef2357fb7d79e4e11de526085")]
 [assembly: System.Reflection.AssemblyProductAttribute("Bookfy.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Bookfy.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
