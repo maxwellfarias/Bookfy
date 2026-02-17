@@ -1,5 +1,6 @@
 using System;
 using Bookfy.Domain.Users;
+using Bookfy.Domain.Users.Events;
 
 namespace Bookfy.Domain.Users;
 
@@ -30,6 +31,8 @@ code.
 
     static public User Create(FirstName firstName, LastName lastName, Email email)
     {
+        var user = new User(Guid.NewGuid(), firstName, lastName, email);
+        user.RaiseDomainEvent(new UserCreatedDomainEvent(user.Id));
         return new User(Guid.NewGuid(), firstName, lastName, email);
     }
 }

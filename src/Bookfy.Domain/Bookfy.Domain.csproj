@@ -9,6 +9,7 @@
   <ItemGroup>
     <Folder Include="Apartments/" />
     <Folder Include="Users/" />
+    <Folder Include="Users/Events/" />
   </ItemGroup>
 
   <ItemGroup>
