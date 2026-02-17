@@ -10,13 +10,13 @@ public sealed class Apartment : Entity
     public Apartment(Guid id) : base(id)
     {
     }
-    public string Name { get; private set; }
-    public string Description { get; private set; }
-    public string Country { get; private set; }
-    public string State { get; private set; }
-    public string ZipCode { get; private set; }
-    public string City { get; private set; }
-    public string Street { get; private set; }
+    // A good candidate to a value object are the string properties such as Name and Description, as well as the Address property. These properties
+    // represent values that are associated with the apartment and do not have a unique identity of their own. By making them value objects,
+    // we can ensure that they are immutable and can be compared based on their values rather than their identities. This can help to simplify the
+    // code and make it easier to reason about the behavior of the apartment entity.
+    public Name Name { get; private set; }
+    public Description Description { get; private set; }
+    public Address Address { get; private set; }
     public decimal PriceAmount { get; private set; }
     public string PriceCurrency { get; private set; }
     public decimal CleaningFeeAmount { get; private set; }
