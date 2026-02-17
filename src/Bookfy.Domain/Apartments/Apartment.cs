@@ -5,9 +5,11 @@ namespace Bookfy.Domain.Apartments;
 //The use of sealed is to prevent the class from being inherited. This is useful when you want to create a class that represents a specific concept
 //and you don't want it to be extended or modified by other classes. In this case, the Apartment class represents a specific concept of an apartment
 //and we want to ensure that it cannot be extended or modified by other classes.
-public sealed class Apartment
+public sealed class Apartment : Entity
 {
-    public Guid Id { get; private set; }
+    public Apartment(Guid id) : base(id)
+    {
+    }
     public string Name { get; private set; }
     public string Description { get; private set; }
     public string Country { get; private set; }
