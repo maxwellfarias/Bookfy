@@ -44,9 +44,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/maxwellfarias/Documents/Course/Programatic Clen Achitecture/src/Bookfy.Domain/Bookfy.Domain.csproj",
-      "projectName": "Bookfy.Domain",
-      "projectPath": "/Users/maxwellfarias/Documents/Course/Programatic Clen Achitecture/src/Bookfy.Domain/Bookfy.Domain.csproj",
+      "projectUniqueName": "/Users/maxwellfarias/Documents/Course/Programatic Clen Achitecture/src/Bookfy.Domain/Bookify.Domain.csproj",
+      "projectName": "Bookify.Domain",
+      "projectPath": "/Users/maxwellfarias/Documents/Course/Programatic Clen Achitecture/src/Bookfy.Domain/Bookify.Domain.csproj",
       "packagesPath": "/Users/maxwellfarias/.nuget/packages/",
       "outputPath": "/Users/maxwellfarias/Documents/Course/Programatic Clen Achitecture/src/Bookfy.Domain/obj/",
       "projectStyle": "PackageReference",

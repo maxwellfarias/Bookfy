@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Bookfy.Appication")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b5c4456856bfd5ee9071599028363b74fac3c99c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4a858a1e2fc0df892b5c82b652102a58516c16b0")]
 [assembly: System.Reflection.AssemblyProductAttribute("Bookfy.Appication")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Bookfy.Appication")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

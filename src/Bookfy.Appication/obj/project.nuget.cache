@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/coiO0TlPDc=",
+  "dgSpecHash": "OSYYbLs/VUg=",
   "success": true,
-  "projectFilePath": "/Users/maxwellfarias/Documents/Course/Programatic Clen Achitecture/src/Bookfy.Appication/Bookfy.Appication.csproj",
+  "projectFilePath": "/Users/maxwellfarias/Documents/Course/Programatic Clen Achitecture/src/Bookfy.Appication/Bookify.Application.csproj",
   "expectedPackageFiles": [
     "/Users/maxwellfarias/.nuget/packages/mediatr/14.0.0/mediatr.14.0.0.nupkg.sha512",
     "/Users/maxwellfarias/.nuget/packages/mediatr.contracts/2.0.1/mediatr.contracts.2.0.1.nupkg.sha512",

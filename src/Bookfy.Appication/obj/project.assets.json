@@ -147,6 +147,19 @@
         "build": {
           "buildTransitive/net8.0/_._": {}
         }
+      },
+      "Bookify.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "MediatR.Contracts": "2.0.1"
+        },
+        "compile": {
+          "bin/placeholder/Bookify.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Bookify.Domain.dll": {}
+        }
       }
     }
   },
@@ -415,10 +428,16 @@
         "system.diagnostics.diagnosticsource.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "Bookify.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Bookfy.Domain/Bookify.Domain.csproj",
+      "msbuildProject": "../Bookfy.Domain/Bookify.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net9.0": [
+      "Bookify.Domain >= 1.0.0",
       "MediatR >= 14.0.0"
     ]
   },
@@ -428,9 +447,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/maxwellfarias/Documents/Course/Programatic Clen Achitecture/src/Bookfy.Appication/Bookfy.Appication.csproj",
-      "projectName": "Bookfy.Appication",
-      "projectPath": "/Users/maxwellfarias/Documents/Course/Programatic Clen Achitecture/src/Bookfy.Appication/Bookfy.Appication.csproj",
+      "projectUniqueName": "/Users/maxwellfarias/Documents/Course/Programatic Clen Achitecture/src/Bookfy.Appication/Bookify.Application.csproj",
+      "projectName": "Bookify.Application",
+      "projectPath": "/Users/maxwellfarias/Documents/Course/Programatic Clen Achitecture/src/Bookfy.Appication/Bookify.Application.csproj",
       "packagesPath": "/Users/maxwellfarias/.nuget/packages/",
       "outputPath": "/Users/maxwellfarias/Documents/Course/Programatic Clen Achitecture/src/Bookfy.Appication/obj/",
       "projectStyle": "PackageReference",
@@ -446,7 +465,11 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/Users/maxwellfarias/Documents/Course/Programatic Clen Achitecture/src/Bookfy.Domain/Bookify.Domain.csproj": {
+              "projectPath": "/Users/maxwellfarias/Documents/Course/Programatic Clen Achitecture/src/Bookfy.Domain/Bookify.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
