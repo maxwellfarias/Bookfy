@@ -71,11 +71,6 @@ public class Booking : Entity
         );
         booking.RaiseDomainEvent(new BookingReservedDomainEvent(booking.Id));
         apartment.LastBookedOnUtc = utcNow;
-        var tmp0 = Result.Failure<Booking>(Error.None);
-        var tmp1 = Result.Failure(Error.None);
-        var tmp2 = Result.Success();
-        var tmp3 = Result.Success(8);
-        var tmp4 = Result.Create<int?>(null);
         return booking;
     }
 
@@ -118,7 +113,7 @@ public class Booking : Entity
             return Result.Failure(BookingErrors.NotConfirmed);
 
         var currentDate = DateOnly.FromDateTime(utcNow);
-        if(currentDate > Duration.Start)
+        if (currentDate > Duration.Start)
             return Result.Failure(BookingErrors.AlreadyStarted);
 
         Status = BookingStatus.Cancelled;
