@@ -10,4 +10,8 @@
   <ItemGroup>
     <ProjectReference Include="../Bookfy.Domain/Bookify.Domain.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Abstractions/" />
+    <Folder Include="Abstractions/Messaging/" />
+  </ItemGroup>
 </Project>
