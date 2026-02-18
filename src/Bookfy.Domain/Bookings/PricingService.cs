@@ -1,7 +1,7 @@
 using System;
-using Bookfy.Domain.Apartments;
+using Bookify.Domain.Apartments;
 
-namespace Bookfy.Domain.Bookings;
+namespace Bookify.Domain.Bookings;
 
 public class PricingService
 {

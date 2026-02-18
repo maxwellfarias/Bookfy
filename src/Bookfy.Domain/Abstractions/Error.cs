@@ -1,4 +1,4 @@
-namespace Bookfy.Domain.Abstractions;
+namespace Bookify.Domain.Abstractions;
 
 public record class Error(string Code, string Message)
 {

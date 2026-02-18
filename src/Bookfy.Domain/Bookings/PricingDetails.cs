@@ -1,5 +1,5 @@
-using Bookfy.Domain.Apartments;
+using Bookify.Domain.Apartments;
 
-namespace Bookfy.Domain.Bookings;
+namespace Bookify.Domain.Bookings;
 
 public record class PricingSerive(Money PriceForPeriod, Money CleaningFee, Money AmenitiesUpCharge, Money TotalPrice);

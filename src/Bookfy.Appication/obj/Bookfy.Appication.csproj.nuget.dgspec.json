@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/maxwellfarias/Documents/Course/Programatic Clen Achitecture/src/Bookfy.Appication/Bookfy.Appication.csproj": {}
+    "/Users/maxwellfarias/Documents/Course/Programatic Clen Achitecture/src/Bookify.Appication/Bookify.Appication.csproj": {}
   },
   "projects": {
-    "/Users/maxwellfarias/Documents/Course/Programatic Clen Achitecture/src/Bookfy.Appication/Bookfy.Appication.csproj": {
+    "/Users/maxwellfarias/Documents/Course/Programatic Clen Achitecture/src/Bookify.Appication/Bookify.Appication.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/maxwellfarias/Documents/Course/Programatic Clen Achitecture/src/Bookfy.Appication/Bookfy.Appication.csproj",
-        "projectName": "Bookfy.Appication",
-        "projectPath": "/Users/maxwellfarias/Documents/Course/Programatic Clen Achitecture/src/Bookfy.Appication/Bookfy.Appication.csproj",
+        "projectUniqueName": "/Users/maxwellfarias/Documents/Course/Programatic Clen Achitecture/src/Bookify.Appication/Bookify.Appication.csproj",
+        "projectName": "Bookify.Appication",
+        "projectPath": "/Users/maxwellfarias/Documents/Course/Programatic Clen Achitecture/src/Bookify.Appication/Bookify.Appication.csproj",
         "packagesPath": "/Users/maxwellfarias/.nuget/packages/",
-        "outputPath": "/Users/maxwellfarias/Documents/Course/Programatic Clen Achitecture/src/Bookfy.Appication/obj/",
+        "outputPath": "/Users/maxwellfarias/Documents/Course/Programatic Clen Achitecture/src/Bookify.Appication/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/maxwellfarias/.nuget/NuGet/NuGet.Config"

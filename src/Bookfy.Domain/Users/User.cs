@@ -1,12 +1,14 @@
 using System;
-using Bookfy.Domain.Users;
-using Bookfy.Domain.Users.Events;
+using Bookify.Domain.Abstractions;
+using Bookify.Domain.Users;
+using Bookify.Domain.Users.Events;
 
-namespace Bookfy.Domain.Users;
+namespace Bookify.Domain.Users;
 
 public sealed class User : Entity
 {
-    public User(Guid id, FirstName firstName, LastName lastName, Email email) : base(id)
+    public User(Guid id, FirstName firstName, LastName lastName, Email email)
+        : base(id)
     {
         FirstName = firstName;
         LastName = lastName;
@@ -29,7 +31,7 @@ implementation of the User class based on the user's role or other criteria.
 code.
     */
 
-    static public User Create(FirstName firstName, LastName lastName, Email email)
+    public static User Create(FirstName firstName, LastName lastName, Email email)
     {
         var user = new User(Guid.NewGuid(), firstName, lastName, email);
         user.RaiseDomainEvent(new UserCreatedDomainEvent(user.Id));

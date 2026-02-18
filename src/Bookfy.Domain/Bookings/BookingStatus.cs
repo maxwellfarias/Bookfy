@@ -1,4 +1,4 @@
-namespace Bookfy.Domain.Bookings;
+namespace Bookify.Domain.Bookings;
 
 public enum BookingStatus
 {

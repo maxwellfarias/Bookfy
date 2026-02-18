@@ -1,7 +1,7 @@
 using System;
-using Bookfy.Domain.Abstractions;
+using Bookify.Domain.Abstractions;
 
-namespace Bookfy.Domain.Abstractions;
+namespace Bookify.Domain.Abstractions;
 
 // The Entity class is an abstract class that represents a base entity in the domain. It has a single property,
 // Id, which is a unique identifier for the entity.

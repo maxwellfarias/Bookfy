@@ -1,3 +1,3 @@
-namespace Bookfy.Domain.Apartments;
+namespace Bookify.Domain.Apartments;
 
 public record class Name(string Value);

@@ -1,5 +1,5 @@
-using Bookfy.Domain.Abstractions;
+using Bookify.Domain.Abstractions;
 
-namespace Bookfy.Domain.Users.Events;
+namespace Bookify.Domain.Users.Events;
 
 public sealed record UserCreatedDomainEvent(Guid UserId): IDomainEvent;

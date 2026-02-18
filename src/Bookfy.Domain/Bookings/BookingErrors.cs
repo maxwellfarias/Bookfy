@@ -1,7 +1,7 @@
 using System;
-using Bookfy.Domain.Abstractions;
+using Bookify.Domain.Abstractions;
 
-namespace Bookfy.Domain.Bookings;
+namespace Bookify.Domain.Bookings;
 
 public static class BookingErrors
 {

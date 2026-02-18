@@ -1,4 +1,4 @@
-namespace Bookfy.Domain.Apartments;
+namespace Bookify.Domain.Apartments;
 
 //A record is a good choice for the Address class because it is a simple data structure that is primarily used to hold data. Records are
 //immutable by default, which means that once an instance of the Address record is created, its properties cannot be changed. This immutability can

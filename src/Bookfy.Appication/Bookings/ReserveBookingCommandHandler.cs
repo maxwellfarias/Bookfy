@@ -1,10 +1,6 @@
-using System;
-using System.Windows.Input;
-using Bookfy.Domain.Abstractions;
-using Bookfy.Domain.Apartments;
-using Bookfy.Domain.Bookings;
-using Bookfy.Domain.Users;
 using Bookify.Application.Abstractions.Messaging;
+using Bookify.Domain.Abstractions;
+using Bookify.Domain.Apartments;
 using Bookify.Domain.Bookings;
 using Bookify.Domain.Users;
 
@@ -33,6 +29,26 @@ public sealed class ReserveBookingCommandHandler(
         if (user is null)
             return Result.Failure<Guid>(UserErrors.NotFound);
 
-        throw new NotImplementedException();
+        var apartment = await _apartmentRepository.GetByIdAsync(
+            request.ApartamentId,
+            cancellationToken
+        );
+        if (apartment is null)
+            return Result.Failure<Guid>(ApartmentErrors.NotFound);
+
+        var duration = DateRange.Create(request.StartDate, request.EndDate);
+        if (await _bookingRepository.IsOverlappingAsync(apartment, duration, cancellationToken))
+            return Result.Failure<Guid>(BookingErrors.Overlapping);
+
+        var booking = Booking.Reserve(
+            apartment,
+            user.Id,
+            duration,
+            DateTime.UtcNow,
+            _pricingService
+        );
+        _bookingRepository.Add(booking);
+        await _unitOfWork.SaveChangesAsync(cancellationToken);
+        return booking.Id;
     }
 }

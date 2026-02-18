@@ -1,11 +1,11 @@
 using System;
 using System.IO.Pipelines;
-using Bookfy.Domain.Abstractions;
-using Bookfy.Domain.Apartments;
-using Bookfy.Domain.Bookings.Events;
+using Bookify.Domain.Abstractions;
+using Bookify.Domain.Apartments;
+using Bookify.Domain.Bookings.Events;
 using Microsoft.VisualBasic;
 
-namespace Bookfy.Domain.Bookings;
+namespace Bookify.Domain.Bookings;
 
 public class Booking : Entity
 {

@@ -1,8 +1,8 @@
 using System;
-using Bookfy.Domain.Bookings;
+using Bookify.Domain.Bookings;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Bookfy.Appication;
+namespace Bookify.Appication;
 
 public static class DependencyInjection
 {

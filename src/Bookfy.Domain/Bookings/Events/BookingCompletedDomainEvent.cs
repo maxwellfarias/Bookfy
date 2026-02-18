@@ -1,5 +1,5 @@
-using Bookfy.Domain.Abstractions;
+using Bookify.Domain.Abstractions;
 
-namespace Bookfy.Domain.Bookings.Events;
+namespace Bookify.Domain.Bookings.Events;
 
 public record class BookingCompletedDomainEvent(Guid BookingId) : IDomainEvent;

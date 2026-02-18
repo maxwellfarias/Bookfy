@@ -1,6 +1,6 @@
 using System;
 
-namespace Bookfy.Domain.Apartments;
+namespace Bookify.Domain.Apartments;
 
 public interface IApartmentRepository
 {

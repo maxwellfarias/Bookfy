@@ -1,6 +1,6 @@
 using System;
 
-namespace Bookfy.Domain.Abstractions;
+namespace Bookify.Domain.Abstractions;
 
 public interface IUnitOfWork
 {

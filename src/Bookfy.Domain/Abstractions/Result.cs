@@ -1,7 +1,7 @@
 using System;
 using System.Diagnostics.CodeAnalysis;
 
-namespace Bookfy.Domain.Abstractions;
+namespace Bookify.Domain.Abstractions;
 
 public class Result
 {

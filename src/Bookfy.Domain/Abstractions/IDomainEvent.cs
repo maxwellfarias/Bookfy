@@ -1,7 +1,7 @@
 using System;
 using MediatR;
 
-namespace Bookfy.Domain.Abstractions;
+namespace Bookify.Domain.Abstractions;
 
 /*
 DomainEvent is a marker interface that represents an event that has occurred within the domain. It is used to indicate that a particular event

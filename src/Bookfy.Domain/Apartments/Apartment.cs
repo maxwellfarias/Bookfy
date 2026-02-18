@@ -1,7 +1,7 @@
 using System;
-using Bookfy.Domain.Abstractions;
+using Bookify.Domain.Abstractions;
 
-namespace Bookfy.Domain.Apartments;
+namespace Bookify.Domain.Apartments;
 
 //The use of sealed is to prevent the class from being inherited. This is useful when you want to create a class that represents a specific concept
 //and you don't want it to be extended or modified by other classes. In this case, the Apartment class represents a specific concept of an apartment
