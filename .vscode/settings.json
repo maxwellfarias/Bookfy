@@ -1,3 +1,9 @@
 {
-    "dotnet.defaultSolution": "Bookfy.sln"
+    "dotnet.defaultSolution": "Bookfy.sln",
+    "[csharp]": {
+        "editor.defaultFormatter": "csharpier.csharpier-vscode"
+    },
+    "[xml]": {
+        "editor.defaultFormatter": "csharpier.csharpier-vscode"
+    },
 }

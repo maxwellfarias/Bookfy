@@ -11,6 +11,5 @@ public enum Amenity
     Spa = 7,
     Terrace = 8,
     MountainView = 9,
-    GardenView = 10
-
+    GardenView = 10,
 }

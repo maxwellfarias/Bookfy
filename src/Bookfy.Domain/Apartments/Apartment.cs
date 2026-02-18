@@ -1,4 +1,5 @@
 using System;
+using Bookfy.Domain.Abstractions;
 
 namespace Bookfy.Domain.Apartments;
 
@@ -7,7 +8,16 @@ namespace Bookfy.Domain.Apartments;
 //and we want to ensure that it cannot be extended or modified by other classes.
 public sealed class Apartment : Entity
 {
-    public Apartment(Guid id, Name name, Description description, Address address, Money price, Money cleaningFee, List<Amenity> amenities) : base(id)
+    public Apartment(
+        Guid id,
+        Name name,
+        Description description,
+        Address address,
+        Money price,
+        Money cleaningFee,
+        List<Amenity> amenities
+    )
+        : base(id)
     {
         Name = name;
         Description = description;
@@ -16,6 +26,7 @@ public sealed class Apartment : Entity
         CleaningFee = cleaningFee;
         Amenities = amenities;
     }
+
     // A good candidate to a value object are the string properties such as Name and Description, as well as the Address property. These properties
     // represent values that are associated with the apartment and do not have a unique identity of their own. By making them value objects,
     // we can ensure that they are immutable and can be compared based on their values rather than their identities. This can help to simplify the
