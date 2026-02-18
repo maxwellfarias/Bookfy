@@ -1,3 +1,4 @@
+using Bookify.Application.Abstractions.Clock;
 using Bookify.Application.Abstractions.Messaging;
 using Bookify.Domain.Abstractions;
 using Bookify.Domain.Apartments;
@@ -11,7 +12,8 @@ public sealed class ReserveBookingCommandHandler(
     IApartmentRepository apartmentRepository,
     IBookingRepository bookingRepository,
     IUnitOfWork unitOfWork,
-    PricingService pricingService
+    PricingService pricingService,
+    IDateTimeProvider dateTimeProvider
 ) : ICommandHandler<ReserveBookingCommand, Guid>
 {
     private readonly IUserRepository _userRepository = userRepository;
@@ -19,6 +21,7 @@ public sealed class ReserveBookingCommandHandler(
     private readonly IBookingRepository _bookingRepository = bookingRepository;
     private readonly IUnitOfWork _unitOfWork = unitOfWork;
     private readonly PricingService _pricingService = pricingService;
+    private readonly IDateTimeProvider _dateTimeProvider = dateTimeProvider;
 
     public async Task<Result<Guid>> Handle(
         ReserveBookingCommand request,
@@ -44,7 +47,7 @@ public sealed class ReserveBookingCommandHandler(
             apartment,
             user.Id,
             duration,
-            DateTime.UtcNow,
+            _dateTimeProvider.UtcNow,
             _pricingService
         );
         _bookingRepository.Add(booking);
