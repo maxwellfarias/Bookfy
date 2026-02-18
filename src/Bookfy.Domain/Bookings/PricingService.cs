@@ -5,8 +5,8 @@ namespace Bookfy.Domain.Bookings;
 
 public class PricingService
 {
-     public PricingDetails CalculatePrice(Apartment apartment, DateRange period)
-     {
+    public PricingSerive CalculatePrice(Apartment apartment, DateRange period)
+    {
         var currency = apartment.Price.Currency;
         var priceForPeriod = new Money(apartment.Price.Amount * period.LengthInDays, currency);
         decimal percentageUpCharge = 0;
@@ -17,7 +17,7 @@ public class PricingService
                 Amenity.GardenView => 0.05m,
                 Amenity.AirConditioning => 0.01m,
                 Amenity.Parking => 0.01m,
-                _ => 0
+                _ => 0,
             };
         }
         var amentitiesUpCharge = Money.Zero(currency);
@@ -29,11 +29,16 @@ public class PricingService
         var totalPrice = Money.Zero();
         totalPrice += priceForPeriod;
         //Add cleaning fee if there is any
-        if(!apartment.CleaningFee.IsZero())
-        {       
+        if (!apartment.CleaningFee.IsZero())
+        {
             totalPrice += apartment.CleaningFee;
         }
         totalPrice += amentitiesUpCharge;
-        return new PricingDetails(priceForPeriod, apartment.CleaningFee, amentitiesUpCharge, totalPrice);
-     }
+        return new PricingSerive(
+            priceForPeriod,
+            apartment.CleaningFee,
+            amentitiesUpCharge,
+            totalPrice
+        );
+    }
 }
