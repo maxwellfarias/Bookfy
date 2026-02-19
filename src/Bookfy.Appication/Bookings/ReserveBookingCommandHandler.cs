@@ -52,6 +52,10 @@ public sealed class ReserveBookingCommandHandler(
         );
         _bookingRepository.Add(booking);
         await _unitOfWork.SaveChangesAsync(cancellationToken);
+
+        // The Result<T> class defines an implicit operator that automatically converts a value of type T to Result<T>.
+        // When returning booking.Id (a Guid), the C# compiler automatically converts it to Result<Guid> using this implicit operator.
+        // This allows returning just the value in success cases without explicitly wrapping it in Result.Success().
         return booking.Id;
     }
 }

@@ -13,7 +13,7 @@
     <ProjectReference Include="../Bookify.Domain/Bookify.Domain.csproj" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Abstractions/Email/" />
     <Folder Include="Abstractions/Messaging/" />
-    <Folder Include="Bookings/" />
   </ItemGroup>
 </Project>
