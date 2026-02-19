@@ -16,17 +16,10 @@ internal sealed class BookingReservedDomainEventHandler(
     public async Task Handle(BookingReservedDomainEvent notification, CancellationToken cancellationToken)
     {
         var booking = await _bookingRepository.GetByIdAsync(notification.BookingId, cancellationToken);
-        if (booking is null)
-        {
-            return;
-        }
+        if (booking is null) return;
         var user = await _userRepository.GetByIdAsync(booking.UserId, cancellationToken);
-        if (user is null)        {
-            return;
-        }
+        if (user is null) return;
         await _emailService.SendAsync(
-            user.Email,
-            "Booking Reserved",
-            $"You have 10 minutes to complete your booking with id {booking.Id} before it expires.");
+            user.Email, "Booking Reserved", $"You have 10 minutes to complete your booking with id {booking.Id} before it expires.");
     }
 }

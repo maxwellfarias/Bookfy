@@ -5,6 +5,7 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
   <ItemGroup>
+    <PackageReference Include="Dapper" Version="2.1.66" />
     <PackageReference Include="MediatR" Version="14.0.0" />
   </ItemGroup>
   <ItemGroup>
@@ -15,5 +16,6 @@
   <ItemGroup>
     <Folder Include="Abstractions/Email/" />
     <Folder Include="Abstractions/Messaging/" />
+    <Folder Include="Bookings/GetBooking/" />
   </ItemGroup>
 </Project>

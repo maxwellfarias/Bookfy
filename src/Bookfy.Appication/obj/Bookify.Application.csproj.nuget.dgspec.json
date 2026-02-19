@@ -48,6 +48,10 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.1.66, )"
+            },
             "MediatR": {
               "target": "Package",
               "version": "[14.0.0, )"

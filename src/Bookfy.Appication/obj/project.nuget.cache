@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "OSYYbLs/VUg=",
+  "dgSpecHash": "pRlnvhtlJXY=",
   "success": true,
   "projectFilePath": "/Users/maxwellfarias/Documents/Course/Programatic Clen Achitecture/src/Bookfy.Appication/Bookify.Application.csproj",
   "expectedPackageFiles": [
+    "/Users/maxwellfarias/.nuget/packages/dapper/2.1.66/dapper.2.1.66.nupkg.sha512",
     "/Users/maxwellfarias/.nuget/packages/mediatr/14.0.0/mediatr.14.0.0.nupkg.sha512",
     "/Users/maxwellfarias/.nuget/packages/mediatr.contracts/2.0.1/mediatr.contracts.2.0.1.nupkg.sha512",
     "/Users/maxwellfarias/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/10.0.0/microsoft.extensions.dependencyinjection.abstractions.10.0.0.nupkg.sha512",

@@ -1,9 +1,9 @@
 {
     "dotnet.defaultSolution": "Bookify.sln",
     "[csharp]": {
-        "editor.defaultFormatter": "csharpier.csharpier-vscode"
-    },
-    "[xml]": {
-        "editor.defaultFormatter": "csharpier.csharpier-vscode"
-    },
+        "editor.defaultFormatter": "ms-dotnettools.csharp",
+        "editor.formatOnSave": true,
+        "editor.tabSize": 4,
+        "editor.insertSpaces": true
+    }
 }
