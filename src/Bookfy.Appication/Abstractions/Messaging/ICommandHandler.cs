@@ -1,6 +1,6 @@
 using System;
-using Bookify.Domain.Abstractions;
 using Bookify.Application.Abstractions.Messaging;
+using Bookify.Domain.Abstractions;
 using MediatR;
 
 namespace Bookify.Application.Abstractions.Messaging;
